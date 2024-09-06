@@ -7,6 +7,7 @@
 body {
     color: #333;
     font-family: 'Inter';
+    line-height: 1.4; /* Added line-height for Inter font */
 }
 
 header {
@@ -71,6 +72,7 @@ nav {
     font-size: 18px;
     color: #393939;
     font-weight: normal;
+    line-height: 1.5; /* Added line-height for Inter font */
 }
 
 /* Clients Section */
@@ -90,6 +92,7 @@ nav {
 .clients-section p {
     font-size: 16px;
     margin-bottom: 20px;
+    line-height: 1.4; /* Added line-height for Inter font */
 }
 
 .clients-logos-wrapper {
@@ -168,6 +171,7 @@ nav {
     margin-top: 30px; /* Reduced from 60px to 30px to bring the quote closer to the photo */
     font-size: 16px; /* Decreased from 18px to 16px */
     text-shadow: 0px 0px 2px #F2F4F8;
+    line-height: 1.5; /* Added line-height for Inter font */
 }
 
 .testimonial cite {
@@ -178,6 +182,7 @@ nav {
     display: block; /* Ensures the cite is on a new line */
     padding-top: 5px; /* Adds additional space above the cite */
     text-shadow: 0px 0px 2px #F2F4F8;
+    line-height: 1.4; /* Added line-height for Inter font */
 }
 /* Features Section */
 .features-section {
@@ -235,6 +240,7 @@ nav {
 .feature-text p {
     font-size: 16px;
     color: #555;
+    line-height: 1.5; /* Added line-height for Inter font */
 }
 
 /* Responsividade para telas menores */
@@ -313,5 +319,107 @@ nav {
 
     .faq-item p {
         font-size: 14px;
+    }
+}
+
+/* News Section */
+.news-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.news-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    transition: opacity 0.5s ease;
+}
+
+.news-slide.active {
+    display: flex;
+    opacity: 1;
+}
+
+.news-quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.news-logo img {
+    max-width: 150px;
+}
+
+button.prev-btn, button.next-btn {
+    background-color: #2C2C2C;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button.prev-btn {
+    left: 0;
+}
+
+button.next-btn {
+    right: 0;
+}
+
+.carousel-indicators {
+    margin-top: 20px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #5A2BE0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .news-quote {
+        font-size: 16px;
+    }
+
+    .news-logo img {
+        max-width: 100px;
+    }
+
+    button.prev-btn, button.next-btn {
+        font-size: 16px;
+        padding: 8px;
     }
 }

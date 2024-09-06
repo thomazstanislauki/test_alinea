@@ -36,3 +36,38 @@ function autoScrollLogos() {
 cloneLogos();
 // Inicia a rolagem automática
 autoScrollLogos();
+
+const slides = document.querySelectorAll('.news-slide');
+const indicators = document.querySelectorAll('.indicator');
+let currentSlide = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        indicators[i].classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+            indicators[i].classList.add('active');
+        }
+    });
+}
+
+document.querySelector('.next-btn').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+});
+
+document.querySelector('.prev-btn').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+});
+
+indicators.forEach((indicator, i) => {
+    indicator.addEventListener('click', () => {
+        showSlide(i);
+        currentSlide = i;
+    });
+});
+
+// Iniciar com o primeiro slide ativo
+showSlide(currentSlide);
