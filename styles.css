@@ -68,8 +68,9 @@ nav {
 }
 
 .hero-section p {
-    font-size: 16px;
-    color: #333;
+    font-size: 18px;
+    color: #393939;
+    font-weight: thin;
 }
 
 /* Clients Section */
@@ -164,19 +165,18 @@ nav {
 .testimonial blockquote {
     font-style: italic;
     color: #555;
-    margin-top: 60px;
-    font-size: 18px;
+    margin-top: 30px; /* Reduced from 60px to 30px to bring the quote closer to the photo */
+    font-size: 16px; /* Decreased from 18px to 16px */
     text-shadow: 0px 0px 2px rgba(90, 43, 224, 0.2);
 }
 
 .testimonial cite {
-    font-size: 16px;
+    font-size: 14px; /* Decreased from 16px to 14px to maintain proportion */
     font-weight: bold;
     color: #333;
     margin-top: 15px;
     text-shadow: 0px 0px 2px rgba(90, 43, 224, 0.2);
 }
-
 /* Features Section */
 .features-section {
     padding: 60px 20px;
