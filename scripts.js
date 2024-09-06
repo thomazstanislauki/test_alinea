@@ -4,7 +4,7 @@ const logos = document.querySelectorAll('.logo-item');
 function cloneLogos() {
     const containerWidth = logosContainer.scrollWidth;
 
-    // Duplicando logos até que a largura do contêiner seja maior que o dobro da largura original
+    // Clonando o conjunto de logos até que o total ultrapasse o dobro da largura original
     while (logosContainer.scrollWidth < containerWidth * 2) {
         logos.forEach(logo => {
             const clone = logo.cloneNode(true);
@@ -17,11 +17,11 @@ function autoScrollLogos() {
     let scrollAmount = 0;
 
     function scroll() {
-        scrollAmount -= 0.5; // Ajusta a velocidade da rolagem
+        scrollAmount -= 0.3; // Ajusta a velocidade da rolagem
 
         logosContainer.style.transform = `translateX(${scrollAmount}px)`;
 
-        // Reinicia a rolagem quando todo o conteúdo original (e seus clones) já tiver passado
+        // Reinicia a rolagem quando toda a primeira sequência de logos passar
         if (Math.abs(scrollAmount) >= logosContainer.scrollWidth / 2) {
             scrollAmount = 0; // Reseta o scroll para um loop contínuo
         }
