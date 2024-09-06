@@ -80,8 +80,14 @@ nav {
     margin-top: -20px;
 }
 
+.covered{
+    color: #5A2BE0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .clients-section p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
