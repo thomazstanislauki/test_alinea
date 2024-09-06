@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     color: #333;
+    font-family: 'Inter';
 }
 
 header {
@@ -57,20 +56,21 @@ nav {
 }
 
 .hero-section h1 {
+    font-family: 'Outfit';
+    font-weight: 250;
     font-size: 48px;
-    font-weight: bold;
-    color: #333;
+    color:#5A2BE0;
     margin-bottom: 20px;
 }
 
-.hero-section h1 .highlight {
-    color: #5A2BE0;
+.highlight {
+    font-weight: bold;
 }
 
 .hero-section p {
     font-size: 18px;
     color: #393939;
-    font-weight: thin;
+    font-weight: normal;
 }
 
 /* Clients Section */
@@ -167,15 +167,17 @@ nav {
     color: #555;
     margin-top: 30px; /* Reduced from 60px to 30px to bring the quote closer to the photo */
     font-size: 16px; /* Decreased from 18px to 16px */
-    text-shadow: 0px 0px 2px rgba(90, 43, 224, 0.2);
+    text-shadow: 0px 0px 2px #F2F4F8;
 }
 
 .testimonial cite {
     font-size: 14px; /* Decreased from 16px to 14px to maintain proportion */
     font-weight: bold;
     color: #333;
-    margin-top: 15px;
-    text-shadow: 0px 0px 2px rgba(90, 43, 224, 0.2);
+    margin-top: 20px; /* Increased from 15px to 20px to add spacing */
+    display: block; /* Ensures the cite is on a new line */
+    padding-top: 5px; /* Adds additional space above the cite */
+    text-shadow: 0px 0px 2px #F2F4F8;
 }
 /* Features Section */
 .features-section {
@@ -190,6 +192,7 @@ nav {
     font-weight: 600;
     margin-bottom: 40px;
     color: #333;
+    font-family: 'Outfit';
 }
 
 .feature {
@@ -225,7 +228,7 @@ nav {
 .feature-text h3 {
     font-size: 24px;
     font-weight: 600;
-    color: #333;
+    color: #5A2BE0;
     margin-bottom: 15px;
 }
 
