@@ -57,6 +57,7 @@ nav {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(90, 43, 224, 0.1);
+    margin-bottom: 30px; /* Added margin-bottom */
 }
 
 .hero-section::before {
@@ -115,12 +116,6 @@ nav {
     color: #5A2BE0;
     font-size: 20px;
     font-weight: bold;
-    display: inline-block;
-    margin-bottom: 5px; /* Reduced margin to bring text closer to logos */
-}
-
-.clients-section p {
-    margin-bottom: 10px; /* Reduced margin to bring the entire text closer to logos */
 }
 
 .clients-section p {
