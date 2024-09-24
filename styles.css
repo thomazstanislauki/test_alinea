@@ -90,7 +90,7 @@ nav {
 }
 
 .hero-section p {
-    font-size: 18px;
+    font-size: 16px;
     color: #393939;
     font-weight: normal;
     line-height: 1.5;
@@ -115,6 +115,12 @@ nav {
     color: #5A2BE0;
     font-size: 20px;
     font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px; /* Reduced margin to bring text closer to logos */
+}
+
+.clients-section p {
+    margin-bottom: 10px; /* Reduced margin to bring the entire text closer to logos */
 }
 
 .clients-section p {
